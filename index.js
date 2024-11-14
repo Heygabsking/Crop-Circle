@@ -36,6 +36,10 @@ app.get("/api/news", async (req, res) => {
     }
 });
 
+app.get("/home", async (req, res) => {
+    res.json({Message: "Server has been re-started"});
+} )
+
 // Use the message route for the contact form submission
 app.use(messageRoute);
 
