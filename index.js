@@ -36,7 +36,7 @@ app.get("/api/news", async (req, res) => {
     }
 });
 
-app.get("/home", async (req, res) => {
+app.get("/", async (req, res) => {
     res.json({Message: "Server has been re-started"});
 } )
 
